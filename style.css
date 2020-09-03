@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,700&display=swap');
+
+.gallery-image img {
+    width: 100%;
+}
+
+header .header-banner {
+
+    background-image: url("img/banner.jpg");
+    width: 100%;
+    height: calc(100vh - 500px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+
+}
+
+body{
+    margin: 0;
+}
+
+header h1 {
+
+    font-family: "Open Sans", serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+
+
+}
+
+header h2 {
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    font-style: italic;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+
+header nav ul {
+
+    display: block;
+    margin: 0 auto;
+    text-align: center; /*IE*/
+    width: fit-content;
+    padding-left: 0;
+
+}
+
+header nav ul li {
+
+    display: inline-block;
+    padding: 16px 16px;
+
+}
+
+nav ul li a {
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+
+footer {
+
+    width: calc(100% - 40px);
+    padding: 20px 20px;
+    background-color: #d9d9d9;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+footer ul {
+
+    width: fit-content;
+    float: left;
+    padding-left: 0px;
+    margin: 0;
+
+}
+
+footer ul li {
+
+    display: block;
+    padding: 0;
+
+}
+
+footer ul li a {
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.footer-sm {
+
+    width: 32px;
+    float: right;
+
+}
+
+.footer-sm img {
+
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+hr {
+
+    color: black;
+    border-width: 2px;
+    width: 60%;
+    margin: 0 auto 5px;
+
+}
+
+.meist-h2 {
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px;
+    color: black;
+    text-transform: uppercase;
+    text-align: left;
+
+}
+
+.gallery-h2 {
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 10px;
+    color: black;
+    text-transform: uppercase;
+    text-align: left;
+
+}
+
+.image{
+    border-radius: 50%;
+}
+
+.gallery-image {
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    -webkit-flex-basis: 300px;
+    -moz-flex-basis: 300px;
+    flex-basis: 300px;
+}
+
+.chef-image img {
+    width: 350px;
+    margin-right: 50px;
+}
+
+.chef-image{
+    width: 400px;
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+    -webkit-flex-basis: 300px;
+    -moz-flex-basis: 300px;
+    flex-basis: 300px;
+}
+
+.meist-container p {
+    width: auto;
+}
+
+.post-header {
+
+    /*kujundus*/
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 9px #111111;
+
+    /*positsioneerimine*/
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.gallery-links {
+
+    display: flex;
+    flex-flow: row wrap;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    display: -moz-flex;
+    -moz-flex-flow: row wrap;
+    justify-content: center;
+    -o-flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+.meist-container{
+    display: flex;
+    align-items: center;
+
+    margin-top: 15px;
+}
+
+
+main div p {
+    font-family: "Open Sans", sans-serif;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 950px) {
+
+    .background-box{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    header .header-banner {
+        height: calc(100vh - 400px);
+    }
+
+    header h1 a {
+        font-size: 80px;
+    }
+
+    header h2 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    header nav ul li {
+        padding: 16px 42px;
+    }
+
+    hr {
+
+        display: none;
+
+    }
+
+    header nav ul li {
+        display: inline-block;
+        padding: 16px 100px;
+
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+    .gallery-links{
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    main .index-header h2{
+        display: none;
+    }
+    .meist-container{
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .chef-image{
+        display:none;
+    }
+}
